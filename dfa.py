@@ -21,7 +21,6 @@ def read():
 def dfa(input):
     stare_curenta = stare_start
     drum=[stare_curenta]
-    print(stare_curenta)
     for chestie in input:
         stare_curenta = stari[stare_curenta].get(chestie)
         if stare_curenta is None:
