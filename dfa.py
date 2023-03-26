@@ -5,16 +5,13 @@ stari = dict()
 
 for i in tranz:
     trzs = i.strip().split(' ')
-    print(trzs)
     try:
         stari[trzs[0]][trzs[1]] = trzs[2]
     except:
         stari[trzs[0]] = dict()
         stari[trzs[0]][trzs[1]] = trzs[2]
-print(stari)
 stare_start='q0'
 stare_finala=set(fin.strip().split(' '))
-print(stare_finala)
 def read():
     return input("Introdu cuvant: ")
 
